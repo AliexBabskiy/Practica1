@@ -1,0 +1,24 @@
+﻿<Window x:Class="PrPract1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrPract1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Bt1" Content="Сотрудник" Grid.Row="1" Click="Bt1_Cl"/>
+        <Button x:Name="Bt2" Grid.Column="1" Content="Клиент" Grid.Row="1" Click="Bt2_Cl"/>
+        <Button x:Name="Bt3" Grid.Column="2" Content="Кофе" Grid.Row="1" Click="Bt3_Cl"/>
+        <Frame x:Name="FrameP" Grid.ColumnSpan="3" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

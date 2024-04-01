@@ -22,7 +22,7 @@ namespace PrPract1
     public partial class MainWindow : Window
     {
         EMPTableAdapter emp = new EMPTableAdapter();
-        ClientsTableAdapter clients = new ClientsTableAdapter();
+        ClientTableAdapter clients = new ClientTableAdapter();
         CoffeeTableAdapter coffee = new CoffeeTableAdapter();
         public MainWindow()
         {

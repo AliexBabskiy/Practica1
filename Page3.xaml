@@ -9,7 +9,26 @@
       Title="Page3">
 
     <Grid>
-        <DataGrid Name="tablic" Grid.ColumnSpan="3"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Name="tablic" Grid.ColumnSpan="4" IsReadOnly="True" SelectionChanged="tablic_Dob"/>
         <Frame x:Name="FrameP" Grid.ColumnSpan="3" NavigationUIVisibility="Hidden"/>
+
+        <TextBox x:Name="text1" Grid.Row="1" Text=""/>
+        <TextBox x:Name="text2" Grid.Row="1" Grid.Column="1" Text=""/>
+        <TextBox x:Name="text3" Grid.Row="1" Grid.Column="2" Text=""/>
+
+        <Button x:Name="BtDob" Content="Добавить" Grid.Row="2" Click="BtDob_Cl"/>
+        <Button x:Name="BtIzm" Grid.Column="1" Content="Изменить" Grid.Row="2" Click="BtIzm_Cl"/>
+        <Button x:Name="BtDel" Grid.Column="2" Content="Удалить" Grid.Row="2" Click="BtDel_Cl"/>
     </Grid>
 </Page>

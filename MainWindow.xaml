@@ -16,6 +16,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
         <Button x:Name="Bt1" Content="Сотрудник" Grid.Row="1" Click="Bt1_Cl"/>
         <Button x:Name="Bt2" Grid.Column="1" Content="Клиент" Grid.Row="1" Click="Bt2_Cl"/>
         <Button x:Name="Bt3" Grid.Column="2" Content="Кофе" Grid.Row="1" Click="Bt3_Cl"/>
